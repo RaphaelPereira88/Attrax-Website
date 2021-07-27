@@ -7,7 +7,6 @@
 
 .logo{
     float:left; 
-    margin-left : 5%;
 	width: 50px;
 	height:50px;
 	background-size: cover;
@@ -16,6 +15,7 @@
 
 
 .topbar {
+    height:40px;
     list-style-type: none;
     padding: 0px;
     margin:0px;
@@ -34,11 +34,15 @@
     font-size: 15px;
 }
 
+.topbar a:hover{
+    background-color:#494948;
+}
 
 .topbar .icon {
     display: none;
     color:black;
     margin:2%;
+    margin-top:15px;
     margin-right:5%;
     padding:2px;
 }
@@ -69,11 +73,6 @@
         display: block;
         text-align: right;
     }
-}
-
-/* change color when class change to activated*/
-a.activated{
-    background-color:green;
 }
 
 

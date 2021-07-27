@@ -4,17 +4,16 @@
 }
 
 .column {
+    width:300px;
     display:block;
     margin-top:5%;
     border-radius: 25px;
     border: 3px solid#7C3491;
-    width: 350px;
 }
+
 section p{
-    font-family: 'Rubik', sans-serif;
-    padding: 5px;
+    padding: 15px 25px 10px;
     text-align:center;
-    margin:auto;
 }
 
 .goldenstar, .silverstar, .bronzestar{
@@ -31,24 +30,37 @@ section p{
 
 
 #goldpackage{
-    height:300px;
+    height:335px;
+    width: 350px;
+    margin-top:0;
 }
 
 #silverpackage{
     margin-right:20px;
     margin-left:auto;
-    margin-top:100px;
+    margin-top:20px;
+    margin-bottom:15px;
+    height:300px;
+    width: 300px;
 }
 
 #bronzepackage{
     margin-left:20px;
     margin-right:auto;
-    margin-top:100px;
+    margin-top:20px;
+    height:300px;
+    width: 300px;
 }
+
 
 .silverstar{
 	color: grey; 
 }
 .bronzestar{
 	color: orange;
+}
+
+#button{
+    margin-top:105px;
+    border: 5px solid white;
 }

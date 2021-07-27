@@ -11,7 +11,7 @@
     padding-top:5%;
 }
 
-.banner2 #button, .row #button{
+.banner2 button, .row button{
     margin-top:0px;
 }
 
@@ -19,9 +19,8 @@
     margin-right:150px;
     float:right;
 }
-.banner2 #button{
+.banner2 button{
     margin-left:300px;
-
 }
 
 .text p{
