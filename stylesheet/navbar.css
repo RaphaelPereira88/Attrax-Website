@@ -1,0 +1,83 @@
+.nav{
+    width:100%;
+    margin-bottom:10%;
+    background-color:white;
+}
+
+
+.logo{
+    float:left; 
+    margin-left : 5%;
+	width: 50px;
+	height:50px;
+	background-size: cover;
+	background-image: url('https://www.graphicsprings.com/filestorage/stencils/f794ad52bccba5259868672d8db49de5.png?width=500&height=500') ;
+}
+
+
+.topbar {
+    list-style-type: none;
+    padding: 0px;
+    margin:0px;
+    margin-right:5%;
+    overflow: hidden;
+    list-style-type:none;
+}
+
+
+.topbar a {
+    float :right;
+    color: #0c0b0b;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+.topbar .icon {
+    display: none;
+    color:black;
+    margin:2%;
+    margin-right:5%;
+    padding:2px;
+}
+
+/* to get the nav responsive, for mobile phones ,tablets etc..*/
+@media screen and (max-width: 800px) {
+    .topbar a {
+        display: none;
+    }
+    .topbar .icon {
+        float: right;
+        display:block;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .topbar.active {
+        position:static;
+    }
+    .topbar.active .icon {
+        position: right;
+        right: 0;
+        top: 0;
+    }
+    .topbar.active a {
+        float:right;
+        display: block;
+        text-align: right;
+    }
+}
+
+/* change color when class change to activated*/
+a.activated{
+    background-color:green;
+}
+
+
+
+
+
+
