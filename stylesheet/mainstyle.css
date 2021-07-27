@@ -15,7 +15,6 @@ header{
     padding:0px;
 }
 
-
 button{
     background-color: #34917c;
     border-radius: 20px;
@@ -28,7 +27,6 @@ button{
 button:hover{
     background-color:#44441b;
 }
-
 
 .text h2{
     text-align:left;
@@ -62,7 +60,7 @@ button:hover{
         margin-top:50px;
     }
 }
-  
+
 @media screen and (max-width: 600px) {
     body{
         font:16px;
@@ -109,7 +107,6 @@ button:hover{
         height:250px;
         width: 250px;
     }
-
 
     section p {
         padding:5px;

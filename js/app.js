@@ -16,10 +16,10 @@ const create_nav = (sections)=> {
         aElement.setAttribute('class', aElement.innerHTML);
         aElement.style.setProperty('cursor', 'pointer');
         afooter.style.setProperty('cursor', 'pointer');
-        lifooter.appendChild(afooter)
+        lifooter.appendChild(afooter);
         liElement.appendChild(aElement);
         nav.appendChild(liElement);
-        footer.appendChild(lifooter)
+        footer.appendChild(lifooter);
     };
 };
 
