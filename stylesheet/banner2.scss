@@ -1,0 +1,31 @@
+@import "./mainstyle.scss";
+
+.banner2{
+    background-image: url("https://cdn.lazytrips.com/photos/28/f9/28f9e3edd94826f6dc71146f75008a74-ht.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:bottom;
+    width:100%;
+    min-height:300px;
+    color:white;
+    margin-top:5%;
+    margin-bottom:5%;
+    .text{
+        
+        padding:2em;
+    }
+    .text p{
+        max-width:40%;
+    }
+    @include button-settings;
+}
+
+@media only screen and (max-width:800px){
+    .banner2{
+        text-align:center;
+        padding: auto;
+        .text p{
+            max-width:100%;
+        }
+    }
+}
