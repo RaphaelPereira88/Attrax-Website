@@ -1,0 +1,56 @@
+@import url(navbar.css);
+@import url(footer.css);
+@import url(banner1.css);
+@import url(banner2.css);
+@import url(locations.css);
+@import url(packages.css);
+
+// Mixins
+
+@mixin list{
+    li{
+        padding:0.5em;
+        display:inline-block;
+        list-style-type: none;
+        color: #0c0b0b;
+        &:hover{
+            background-color:rgb(223, 206, 224);
+        }
+    }
+
+}
+
+@mixin border{
+    border:2px solid rgb(179, 6, 150);
+    border-radius: 20px;
+    img{
+        border-radius: 20px;
+    }
+}
+
+@mixin button-settings{
+    button{
+        width:120px;
+        height:40px;
+        background-color: #8d679e;
+        border-radius: 20px;
+        border:2px solid white;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover{
+            background-color: rgb(58, 40, 82);
+        }
+    }
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+@media only screen and (max-width:800px){
+    p{
+    font-size:14px;
+    }
+}
