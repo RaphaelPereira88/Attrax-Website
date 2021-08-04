@@ -1,0 +1,48 @@
+@import "./mainstyle.scss";
+
+.packages {
+    display: flex;
+    flex-wrap:wrap;
+    padding:1em;
+    gap:2em;
+    align-items:center;
+    border-radius: 20px;
+    justify-content: center;
+    h3,.button{
+        text-align: center;
+        @include button-settings;
+    }
+    >*{
+        @include border;
+    }
+    > *:nth-child(1),:nth-child(3){
+        flex:1 1 32%;
+        max-width: 40ch;
+    }
+    > *:nth-child(2){
+        flex:1 1 36%;
+        max-width: 40ch;
+    }
+    p{
+        padding:1em;
+    }
+    .fa{
+        margin-top:0;
+        width: 30px;
+        background-size: cover;
+        float:right;
+    }
+}
+
+section h2{
+    text-align: center;
+}
+
+@media only screen and (max-width:1098px){
+    .packages{
+        > *:nth-child(1),:nth-child(2),:nth-child(3){
+            max-width: 27ch;
+            height:auto;
+        }
+    }
+}
