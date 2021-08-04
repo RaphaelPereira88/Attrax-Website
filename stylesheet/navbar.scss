@@ -1,0 +1,42 @@
+@import "./mainstyle.scss";
+
+.nav{
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+    .navItems{
+        width:80%;
+    }
+    .logo{
+        width:20%;
+    }
+    .topbar{
+        text-align:right;
+        .icon {
+            color:black;
+            margin-right:5%;
+        }
+    }
+    @include list;
+}
+
+@media only screen and (max-width:800px){
+    .topbar{ 
+        li {
+            display: none;
+        }
+        .icon {
+            display:block;
+        }
+        &.active li {
+            display: block;
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (min-width:800px){
+    .icon {
+        display:none
+    }
+}
