@@ -1,0 +1,79 @@
+@import "./mainstyle.scss";
+
+.grid-container{
+    margin-bottom:30px;
+    padding:0 5em 0 5em;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr ;  
+    grid-template-rows: .2fr 1fr 1fr;
+    grid-template-areas: "hd hd hd hd"
+                         "picture1 picture1 picture2 picture3"
+                         "picture4 picture5 picture6 picture6";
+    gap:1em;
+    h2{
+        margin:auto;
+        grid-area:hd;
+    }
+    #pic{
+        @include border;
+    }
+    h2,h3{
+        text-align: center;
+    }
+    .picture1{
+        grid-area:picture1;
+    }
+    .picture1,.picture6{
+        display:flex;
+    }
+    .picture2{
+        grid-area:picture2 ;
+    }
+    .picture3{
+        grid-area:picture3;
+    }
+    .picture4{
+        grid-area:picture4;
+    }
+    .picture5{
+        grid-area:picture5;
+    }
+    .picture6{
+        grid-area:picture6;
+    }
+    img{
+        width:100%;
+        height:100%;
+    }
+    .text{
+        width:100%;
+        padding:0.5em;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .image{
+        margin:5px;
+        width:100%
+    }
+    @include button-settings;
+}
+
+@media only screen and (max-width:800px){
+    .grid-container{
+        text-align:center;
+        padding:1.5em;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1.5fr 1fr 1fr 1fr 1fr 1.5fr;
+        grid-template-areas: 
+            "hd"
+            "picture1"
+            "picture2"
+            "picture3"
+            "picture4"
+            "picture5"
+            "picture6";
+        .picture1,.picture6{
+            flex-wrap: wrap;
+        }
+    }
+}
